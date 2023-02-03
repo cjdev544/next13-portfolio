@@ -92,26 +92,6 @@ export default function About() {
           transition={transition}
         >
           <Image
-            src={Web}
-            className='floting-image'
-            width={80}
-            height={80}
-            alt='responsive design'
-          />
-          <span>
-            Desarrollos
-            <br />
-            FullStack
-          </span>
-        </motion.div>
-
-        <motion.div
-          className='about-right__floting'
-          initial={{ left: '9rem', top: '15rem' }}
-          whileInView={{ left: '2rem', top: '15rem' }}
-          transition={transition}
-        >
-          <Image
             src={Full}
             className='floting-image'
             width={80}

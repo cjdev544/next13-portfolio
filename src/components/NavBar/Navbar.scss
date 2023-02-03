@@ -33,6 +33,7 @@
     }
 
     &__list {
+      display: flex;
       flex: 10;
 
       & > ul {
@@ -53,7 +54,7 @@
         left: 100vw;
         opacity: 0.9;
         overflow: hidden;
-        position: absolute;
+        position: fixed;
         transition: all 0.4s ease-in-out;
         top: 5rem;
         width: 100vw;
