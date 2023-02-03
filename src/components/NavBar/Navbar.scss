@@ -5,6 +5,10 @@
   height: 10vh;
   justify-content: space-between;
 
+  &-button {
+    text-decoration: none;
+  }
+
   &-left {
     align-items: center;
     display: flex;
