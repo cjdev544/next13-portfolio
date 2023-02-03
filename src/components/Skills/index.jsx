@@ -17,11 +17,11 @@ import MongoDB from '@/public/images/mongodb 1.png'
 import Electron from '@/public/images/electron 1.png'
 import './Skills.scss'
 
-export default function index() {
+export default function index({ isDarkMode }) {
   return (
     <section className='skills container' id='tecnologias'>
       <div className='services-left'>
-        <span>Trabajo con estas</span>
+        <span style={{ color: isDarkMode && '#fff' }}>Trabajo con estas</span>
         <h2>Tecnologías</h2>
         <span>
           En esta sección podras ver las tegnologías con las que he trabajado.{' '}

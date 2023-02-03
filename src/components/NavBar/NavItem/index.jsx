@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 
 import './NavItem.scss'
 
-export default function NavItem({ item, setOpen }) {
+export default function NavItem({ isDarkMode, item, setOpen }) {
   const [slug, setSlug] = useState(null)
 
   useEffect(() => {
@@ -22,7 +22,11 @@ export default function NavItem({ item, setOpen }) {
 
   return (
     <li className='navItem'>
-      <a href={`#${slug}`} onClick={() => setOpen(false)}>
+      <a
+        href={`#${slug}`}
+        style={isDarkMode ? { color: '#fff' } : { color: '#000' }}
+        onClick={() => setOpen(false)}
+      >
         {item}
       </a>
     </li>

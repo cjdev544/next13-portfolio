@@ -2,6 +2,7 @@
 
 .navItem a {
   text-decoration: none;
+  color: blue;
 
   @media screen and (max-width: $laptop) {
     font-size: 2rem;

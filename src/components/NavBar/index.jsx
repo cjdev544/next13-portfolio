@@ -3,10 +3,11 @@
 import { useState } from 'react'
 import { Squash as Hamburger } from 'hamburger-react'
 
+import DarkMode from '../DarkMode'
 import NavItem from './NavItem'
 import './Navbar.scss'
 
-export default function NavBar() {
+export default function NavBar({ isDarkMode, setIsDarkMode }) {
   const [isOpen, setOpen] = useState(false)
 
   const navItems = ['Servicios', 'Tecnologías', 'Proyectos', 'Contacto']
@@ -19,12 +20,18 @@ export default function NavBar() {
     <nav className='navbar container'>
       <div className='navbar-left'>
         <div className='navbar-left__name'>{'<CjDev544 />'}</div>
+        <DarkMode setIsDarkMode={setIsDarkMode} />
       </div>
       <div className='navbar-right'>
         <div className={`navbar-right__list ${isOpen ? 'isOpen' : ''}`}>
           <ul>
             {navItems.map((item) => (
-              <NavItem key={item} item={item} setOpen={setOpen} />
+              <NavItem
+                key={item}
+                isDarkMode={isDarkMode}
+                item={item}
+                setOpen={setOpen}
+              />
             ))}
           </ul>
         </div>

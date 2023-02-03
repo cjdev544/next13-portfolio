@@ -6,7 +6,7 @@ import { validate } from 'react-email-validator'
 import Swal from 'sweetalert2'
 import './Contact.scss'
 
-export default function Contact() {
+export default function Contact({ isDarkMode }) {
   const form = useRef()
   const [sendingEmail, setSendingEmail] = useState(false)
   const [formData, setFormData] = useState({
@@ -103,7 +103,7 @@ export default function Contact() {
   return (
     <section className='contact container' id='contacto'>
       <div className='contact-left'>
-        <span>Trabajemos juntos</span>
+        <span style={{ color: isDarkMode && '#fff' }}>Trabajemos juntos</span>
         <h2>Contacto</h2>
         <div
           className='blur contact-blur'

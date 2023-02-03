@@ -10,7 +10,7 @@ import Project4 from '@/public/images/project4-1.jpg'
 import Modal from '@/components/Modal'
 import './Projects.scss'
 
-export default function Projects() {
+export default function Projects({ isDarkMode }) {
   const [openModal, setOpenModal] = useState(false)
   const [project, setProject] = useState(null)
 
@@ -25,7 +25,7 @@ export default function Projects() {
 
   return (
     <section id='proyectos' className='projects container'>
-      <span>Algunos de mis</span>
+      <span style={{ color: isDarkMode && '#fff' }}>Algunos de mis</span>
       <h2>Proyectos</h2>
       <p>Puedes dar click sobre un proyecto y verlo mas en profundidad</p>
       <div className='projects-items'>

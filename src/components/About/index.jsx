@@ -11,7 +11,7 @@ import Web from '@/public/images/web.png'
 import Full from '@/public/images/full.png'
 import './About.scss'
 
-export default function About() {
+export default function About({ isDarkMode }) {
   const transition = {
     duration: 2,
     type: 'spring',
@@ -21,7 +21,7 @@ export default function About() {
     <section className='about container'>
       <div className='about-left'>
         <div className='about-left__info'>
-          <span>¡Hola!, yo soy</span>
+          <span style={{ color: isDarkMode && '#fff' }}>¡Hola!, yo soy</span>
           <h1>Jefferson Campos</h1>
           <span>
             Un gusto poder saludarte, vivo en Caracas Venezuela, soy electrónico
@@ -31,7 +31,7 @@ export default function About() {
           </span>
         </div>
         <a
-          href='./resume.pdf'
+          href='/public/resume.pdf'
           rel='noopener noreferrer nofollow'
           target='_blank'
           download
@@ -105,16 +105,27 @@ export default function About() {
           </span>
         </motion.div>
 
-        <div className='blur' style={{ background: 'rgb(238 210 255)' }} />
         <div
           className='blur'
-          style={{
-            background: '#c1f5ff',
-            top: '17rem',
-            left: '-9rem',
-            width: '21rem',
-            height: '11rem',
-          }}
+          style={
+            !isDarkMode
+              ? { background: 'rgb(238 210 255)' }
+              : { background: 'transparent' }
+          }
+        />
+        <div
+          className='blur'
+          style={
+            !isDarkMode
+              ? {
+                  background: '#c1f5ff',
+                  top: '17rem',
+                  left: '-9rem',
+                  width: '21rem',
+                  height: '11rem',
+                }
+              : { background: 'transparent' }
+          }
         />
       </div>
     </section>

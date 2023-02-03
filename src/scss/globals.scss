@@ -20,10 +20,6 @@ body {
   height: 100vh;
 }
 
-header {
-  background: linear-gradient(180deg, #ffc973 0%, rgba(255, 255, 255, 0) 6rem);
-}
-
 h1,
 h2,
 h3,
@@ -35,6 +31,10 @@ p {
 .App {
   color: $black;
   overflow-x: hidden;
+}
+
+.header {
+  background: linear-gradient(180deg, #ffc973 0%, rgba(255, 255, 255, 0) 6rem);
 }
 
 .container {
