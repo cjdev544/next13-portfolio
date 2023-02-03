@@ -5,10 +5,6 @@ import { useRef, useState } from 'react'
 import Image from 'next/image'
 import XButton from '@iconscout/react-unicons/icons/uil-x'
 
-import Project2_1 from '@/public/images/project2-1.jpg'
-import Project2_2 from '@/public/images/project2-2.jpg'
-import Project2_3 from '@/public/images/project2-3.jpg'
-import Project2_4 from '@/public/images/project2-4.jpg'
 import './Project.scss'
 
 export default function Project2() {
@@ -37,7 +33,7 @@ export default function Project2() {
           onClick={() => setShowPicture('image1')}
         >
           <Image
-            src={Project2_1}
+            src='/images/project2-1.jpg'
             className='projects-img'
             width={450}
             alt='administrador central food imagen 1'
@@ -48,7 +44,7 @@ export default function Project2() {
           onClick={() => setShowPicture('image2')}
         >
           <Image
-            src={Project2_2}
+            src='/images/project2-2.jpg'
             className='projects-img'
             width={450}
             alt='administrador central food imagen 2'
@@ -78,7 +74,7 @@ export default function Project2() {
           onClick={() => setShowPicture('image3')}
         >
           <Image
-            src={Project2_3}
+            src='/images/project2-3.jpg'
             className='projects-img'
             width={450}
             alt='administrador central food imagen 3'
@@ -89,7 +85,7 @@ export default function Project2() {
           onClick={() => setShowPicture('image4')}
         >
           <Image
-            src={Project2_4}
+            src='/images/project2-4.jpg'
             className='projects-img'
             width={450}
             alt='administrador central food imagen 4'
@@ -109,7 +105,7 @@ export default function Project2() {
             />
             {showPicture === 'image1' && (
               <Image
-                src={Project2_1}
+                src='/images/project2-1.jpg'
                 className='picture-item'
                 width={850}
                 alt='administrador central food imagen 1'
@@ -117,7 +113,7 @@ export default function Project2() {
             )}
             {showPicture === 'image2' && (
               <Image
-                src={Project2_2}
+                src='/images/project2-2.jpg'
                 className='picture-item'
                 width={850}
                 alt='administrador central food imagen 2'
@@ -125,7 +121,7 @@ export default function Project2() {
             )}
             {showPicture === 'image3' && (
               <Image
-                src={Project2_3}
+                src='/images/project2-3.jpg'
                 className='picture-item'
                 width={850}
                 alt='administrador central food imagen 3'
@@ -133,7 +129,7 @@ export default function Project2() {
             )}
             {showPicture === 'image4' && (
               <Image
-                src={Project2_4}
+                src='/images/project2-4.jpg'
                 className='picture-item'
                 width={850}
                 alt='administrador central food imagen 4'

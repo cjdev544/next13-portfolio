@@ -3,9 +3,6 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-import UI from '@/public/images/ui.png'
-import Develop from '@/public/images/prog.png'
-import Responsive from '@/public/images/responsive.png'
 import './Services.scss'
 
 export default function Services({ isDarkMode }) {
@@ -40,7 +37,7 @@ export default function Services({ isDarkMode }) {
         >
           <div className='services-card'>
             <Image
-              src={UI}
+              src='/images/ui.png'
               width={80}
               height={80}
               className='services-card__img'
@@ -61,7 +58,7 @@ export default function Services({ isDarkMode }) {
         >
           <div className='services-card'>
             <Image
-              src={Develop}
+              src='/images/prog.png'
               className='services-card__img'
               width={80}
               height={80}
@@ -82,7 +79,7 @@ export default function Services({ isDarkMode }) {
         >
           <div className='services-card'>
             <Image
-              src={Responsive}
+              src='/images/responsive.png'
               className='services-card__img'
               width={80}
               height={80}
@@ -105,7 +102,7 @@ export default function Services({ isDarkMode }) {
       <div className='right-media'>
         <div className='right-card'>
           <Image
-            src={UI}
+            src='/images/ui.png'
             className='right-card__img'
             width={80}
             height={80}
@@ -118,7 +115,7 @@ export default function Services({ isDarkMode }) {
         </div>
         <div className='right-card'>
           <Image
-            src={Develop}
+            src='/images/prog.png'
             className='right-card__img'
             width={80}
             height={80}
@@ -132,7 +129,7 @@ export default function Services({ isDarkMode }) {
         </div>
         <div className='right-card'>
           <Image
-            src={Responsive}
+            src='/images/responsive.png'
             className='right-card__img'
             width={80}
             height={80}

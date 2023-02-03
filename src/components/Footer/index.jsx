@@ -5,16 +5,16 @@ import Image from 'next/image'
 import GitHub from '@iconscout/react-unicons/icons/uil-github'
 import Linkedin from '@iconscout/react-unicons/icons/uil-linkedin'
 
-import Wave from '@/public/images/wave.png'
 import './Footer.scss'
 
 export default function Footer() {
   return (
     <footer className='footer'>
       <Image
-        src={Wave}
+        src='/images/wave.png'
         className='footer-background'
         height={400}
+        width={1200}
         alt='fotter'
       />
       <div className='footer-content'>

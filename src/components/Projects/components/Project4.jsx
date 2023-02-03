@@ -5,10 +5,6 @@ import { useRef, useState } from 'react'
 import Image from 'next/image'
 import XButton from '@iconscout/react-unicons/icons/uil-x'
 
-import Project4_1 from '@/public/images/project4-1.jpg'
-import Project4_2 from '@/public/images/project4-2.jpg'
-import Project4_3 from '@/public/images/project4-3.jpg'
-import Project4_4 from '@/public/images/project4-4.jpg'
 import './Project.scss'
 
 export default function Project4() {
@@ -37,7 +33,7 @@ export default function Project4() {
           onClick={() => setShowPicture('image1')}
         >
           <Image
-            src={Project4_1}
+            src='/images/project4-1.jpg'
             className='projects-img'
             width={450}
             alt='clone de instagram 1'
@@ -48,7 +44,7 @@ export default function Project4() {
           onClick={() => setShowPicture('image2')}
         >
           <Image
-            src={Project4_2}
+            src='/images/project4-2.jpg'
             className='projects-img'
             width={450}
             alt='clone de instagram 2'
@@ -112,7 +108,7 @@ export default function Project4() {
           onClick={() => setShowPicture('image3')}
         >
           <Image
-            src={Project4_3}
+            src='/images/project4-3.jpg'
             className='projects-img'
             width={450}
             alt='clone de instagram 3'
@@ -123,7 +119,7 @@ export default function Project4() {
           onClick={() => setShowPicture('image4')}
         >
           <Image
-            src={Project4_4}
+            src='/images/project4-4.jpg'
             className='projects-img'
             width={450}
             alt='clone de instagram 4'
@@ -143,7 +139,7 @@ export default function Project4() {
             />
             {showPicture === 'image1' && (
               <Image
-                src={Project4_1}
+                src='/images/project4-1.jpg'
                 className='picture-item'
                 width={850}
                 alt='clone de instagram imagen 1'
@@ -151,7 +147,7 @@ export default function Project4() {
             )}
             {showPicture === 'image2' && (
               <Image
-                src={Project4_2}
+                src='/images/project4-2.jpg'
                 className='picture-item'
                 width={850}
                 alt='clone de instagram imagen 2'
@@ -159,7 +155,7 @@ export default function Project4() {
             )}
             {showPicture === 'image3' && (
               <Image
-                src={Project4_3}
+                src='/images/project4-3.jpg'
                 className='picture-item'
                 width={850}
                 alt='clone de instagram imagen 3'
@@ -167,7 +163,7 @@ export default function Project4() {
             )}
             {showPicture === 'image4' && (
               <Image
-                src={Project4_4}
+                src='/images/project4-4.jpg'
                 className='picture-item'
                 width={850}
                 alt='clone de instagram imagen 4'

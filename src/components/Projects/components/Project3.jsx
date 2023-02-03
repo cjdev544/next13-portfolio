@@ -5,10 +5,6 @@ import { useRef, useState } from 'react'
 import Image from 'next/image'
 import XButton from '@iconscout/react-unicons/icons/uil-x'
 
-import Project3_1 from '@/public/images/project3-1.jpg'
-import Project3_2 from '@/public/images/project3-2.jpg'
-import Project3_3 from '@/public/images/project3-3.jpg'
-import Project3_4 from '@/public/images/project3-4.jpg'
 import './Project.scss'
 
 export default function Project3() {
@@ -37,7 +33,7 @@ export default function Project3() {
           onClick={() => setShowPicture('image1')}
         >
           <Image
-            src={Project3_1}
+            src='/images/project3-1.jpg'
             className='projects-img'
             width={450}
             alt='clone de facebook 1'
@@ -48,7 +44,7 @@ export default function Project3() {
           onClick={() => setShowPicture('image2')}
         >
           <Image
-            src={Project3_2}
+            src='/images/project3-2.jpg'
             className='projects-img'
             width={450}
             alt='clone de facebook 2'
@@ -88,7 +84,7 @@ export default function Project3() {
           onClick={() => setShowPicture('image3')}
         >
           <Image
-            src={Project3_3}
+            src='/images/project3-3.jpg'
             className='projects-img'
             width={450}
             alt='clone de facebook 3'
@@ -99,7 +95,7 @@ export default function Project3() {
           onClick={() => setShowPicture('image4')}
         >
           <Image
-            src={Project3_4}
+            src='/images/project3-4.jpg'
             className='projects-img'
             width={450}
             alt='clone de facebook 4'
@@ -119,7 +115,7 @@ export default function Project3() {
             />
             {showPicture === 'image1' && (
               <Image
-                src={Project3_1}
+                src='/images/project3-1.jpg'
                 className='picture-item'
                 width={850}
                 alt='clone de facebook imagen 1'
@@ -127,7 +123,7 @@ export default function Project3() {
             )}
             {showPicture === 'image2' && (
               <Image
-                src={Project3_2}
+                src='/images/project3-2.jpg'
                 className='picture-item'
                 width={850}
                 alt='clone de facebook imagen 2'
@@ -135,7 +131,7 @@ export default function Project3() {
             )}
             {showPicture === 'image3' && (
               <Image
-                src={Project3_3}
+                src='/images/project3-3.jpg'
                 className='picture-item'
                 width={850}
                 alt='clone de facebook imagen 3'
@@ -143,7 +139,7 @@ export default function Project3() {
             )}
             {showPicture === 'image4' && (
               <Image
-                src={Project3_4}
+                src='/images/project3-4.jpg'
                 className='picture-item'
                 width={850}
                 alt='clone de facebook imagen 4'

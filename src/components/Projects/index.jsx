@@ -3,10 +3,6 @@
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 
-import Project1 from '@/public/images/project1-1.jpg'
-import Project2 from '@/public/images/project2-1.jpg'
-import Project3 from '@/public/images/project3-1.jpg'
-import Project4 from '@/public/images/project4-1.jpg'
 import Modal from '@/components/Modal'
 import './Projects.scss'
 
@@ -34,9 +30,10 @@ export default function Projects({ isDarkMode }) {
           onClick={() => handleClick('project1')}
         >
           <Image
-            src={Project1}
+            src='/images/project1-1.jpg'
             className='projects-img'
             width={450}
+            height={250}
             alt='web central food Málaga'
           />
         </button>
@@ -45,9 +42,10 @@ export default function Projects({ isDarkMode }) {
           onClick={() => handleClick('project2')}
         >
           <Image
-            src={Project2}
+            src='/images/project2-1.jpg'
             className='projects-img'
             width={450}
+            height={250}
             alt='administrador central food Málaga'
           />
         </button>
@@ -56,9 +54,10 @@ export default function Projects({ isDarkMode }) {
           onClick={() => handleClick('project3')}
         >
           <Image
-            src={Project3}
+            src='/images/project3-1.jpg'
             className='projects-img'
             width={450}
+            height={250}
             alt='clone de facebook'
           />
         </button>
@@ -67,9 +66,10 @@ export default function Projects({ isDarkMode }) {
           onClick={() => handleClick('project4')}
         >
           <Image
-            src={Project4}
+            src='/images/project4-1.jpg'
             className='projects-img'
             width={450}
+            height={250}
             alt='clone de instagram'
           />
         </button>

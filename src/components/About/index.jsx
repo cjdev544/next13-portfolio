@@ -3,12 +3,6 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-import GitHub from '@/public/images/github.png'
-import Linkedin from '@/public/images/linkedin.png'
-import FotoCj from '@/public/images/boy.png'
-import JS from '@/public/images/js.png'
-import Web from '@/public/images/web.png'
-import Full from '@/public/images/full.png'
 import './About.scss'
 
 export default function About({ isDarkMode }) {
@@ -46,25 +40,45 @@ export default function About({ isDarkMode }) {
             rel='noopener noreferrer nofollow'
             target='_blank'
           >
-            <Image src={GitHub} width={100} height={100} alt='GitHub' />
+            <Image
+              src='/images/github.png'
+              width={100}
+              height={100}
+              alt='GitHub'
+            />
           </a>
           <a
             href='https://www.linkedin.com/in/cjdev544'
             rel='noopener noreferrer nofollow'
             target='_blank'
           >
-            <Image src={Linkedin} width={100} height={100} alt='Linkedin' />
+            <Image
+              src='/images/linkedin.png'
+              width={100}
+              height={100}
+              alt='Linkedin'
+            />
           </a>
         </div>
       </div>
       <div className='about-right'>
-        <Image src={FotoCj} alt='Foto CjDev544' />
+        <Image
+          src='/images/boy.png'
+          width={285}
+          height={406}
+          alt='Foto CjDev544'
+        />
         <motion.div
           initial={{ left: '-26%' }}
           whileInView={{ left: '-14%' }}
           transition={transition}
         >
-          <Image src={JS} width={180} height={180} alt='JavaScript' />
+          <Image
+            src='/images/js.png'
+            width={180}
+            height={180}
+            alt='JavaScript'
+          />
         </motion.div>
 
         <motion.div
@@ -74,7 +88,7 @@ export default function About({ isDarkMode }) {
           transition={transition}
         >
           <Image
-            src={Web}
+            src='/images/web.png'
             className='floting-image'
             width={80}
             height={80}
@@ -94,7 +108,7 @@ export default function About({ isDarkMode }) {
           transition={transition}
         >
           <Image
-            src={Full}
+            src='/images/full.png'
             className='floting-image'
             width={80}
             height={80}

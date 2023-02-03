@@ -5,10 +5,6 @@ import { useRef, useState } from 'react'
 import Image from 'next/image'
 import XButton from '@iconscout/react-unicons/icons/uil-x'
 
-import Project1_1 from '@/public/images/project1-1.jpg'
-import Project1_2 from '@/public/images/project1-2.jpg'
-import Project1_3 from '@/public/images/project1-3.jpg'
-import Project1_4 from '@/public/images/project1-4.jpg'
 import './Project.scss'
 
 export default function Project1() {
@@ -42,7 +38,7 @@ export default function Project1() {
           onClick={() => setShowPicture('image1')}
         >
           <Image
-            src={Project1_1}
+            src='/images/project1-1.jpg'
             className='projects-img'
             width={450}
             alt='central food málaga imagen 1'
@@ -53,7 +49,7 @@ export default function Project1() {
           onClick={() => setShowPicture('image2')}
         >
           <Image
-            src={Project1_2}
+            src='/images/project1-2.jpg'
             className='projects-img'
             width={450}
             alt='central food málaga imagen 2'
@@ -93,7 +89,7 @@ export default function Project1() {
           onClick={() => setShowPicture('image3')}
         >
           <Image
-            src={Project1_3}
+            src='/images/project1-3.jpg'
             className='projects-img'
             width={450}
             alt='central food málaga imagen 3'
@@ -104,7 +100,7 @@ export default function Project1() {
           onClick={() => setShowPicture('image4')}
         >
           <Image
-            src={Project1_4}
+            src='/images/project1-4.jpg'
             className='projects-img'
             width={450}
             alt='central food málaga imagen 4'
@@ -124,7 +120,7 @@ export default function Project1() {
             />
             {showPicture === 'image1' && (
               <Image
-                src={Project1_1}
+                src='/images/project1-1.jpg'
                 className='picture-item'
                 width={850}
                 alt='central food málaga imagen 1'
@@ -132,7 +128,7 @@ export default function Project1() {
             )}
             {showPicture === 'image2' && (
               <Image
-                src={Project1_2}
+                src='/images/project1-2.jpg'
                 className='picture-item'
                 width={850}
                 alt='central food málaga imagen 2'
@@ -140,7 +136,7 @@ export default function Project1() {
             )}
             {showPicture === 'image3' && (
               <Image
-                src={Project1_3}
+                src='/images/project1-3.jpg'
                 className='picture-item'
                 width={850}
                 alt='central food málaga imagen 3'
@@ -148,7 +144,7 @@ export default function Project1() {
             )}
             {showPicture === 'image4' && (
               <Image
-                src={Project1_4}
+                src='/images/project1-4.jpg'
                 className='picture-item'
                 width={850}
                 alt='central food málaga imagen 4'

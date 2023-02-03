@@ -3,18 +3,6 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-import JavaScript from '@/public/images/javascript 1.png'
-import React from '@/public/images/react 1.png'
-import NextJs from '@/public/images/nextJs.png'
-import Gatsby from '@/public/images/gatsby 1.png'
-import Node from '@/public/images/nodedotjs 1.png'
-import Express from '@/public/images/express 1.png'
-import HTML from '@/public/images/html5 1.png'
-import CSS from '@/public/images/css3 1.png'
-import Sass from '@/public/images/sass 1.png'
-import GraphQL from '@/public/images/apollographql 1.png'
-import MongoDB from '@/public/images/mongodb 1.png'
-import Electron from '@/public/images/electron 1.png'
 import './Skills.scss'
 
 export default function index({ isDarkMode }) {
@@ -46,48 +34,60 @@ export default function index({ isDarkMode }) {
         >
           <div className='skills-right__circle-item'>
             <Image
-              src={JavaScript}
+              src='/images/javascript 1.png'
               className='skills-right__circle-img'
+              width={110}
+              height={110}
               alt='JavaScript'
             />
             <span>JavaScript</span>
           </div>
           <div className='skills-right__circle-item'>
             <Image
-              src={React}
+              src='/images/react 1.png'
               className='skills-right__circle-img'
+              width={110}
+              height={110}
               alt='React'
             />
             <span>React</span>
           </div>
           <div className='skills-right__circle-item'>
             <Image
-              src={NextJs}
+              src='/images/nextJs.png'
               className='skills-right__circle-img'
+              width={110}
+              height={110}
               alt='NextJs'
             />
             <span>NextJs</span>
           </div>
           <div className='skills-right__circle-item'>
             <Image
-              src={Gatsby}
+              src='/images/gatsby 1.png'
               className='skills-right__circle-img'
+              width={110}
+              height={110}
               alt='Gatsby'
             />
             <span>Gatsby</span>
           </div>
           <div className='skills-right__circle-item'>
             <Image
-              src={Node}
+              src='/images/nodedotjs 1.png'
               className='skills-right__circle-img'
+              width={110}
+              height={110}
               alt='NodeJs'
             />
             <span>NodeJs</span>
           </div>
           <div className='skills-right__circle-item'>
             <Image
-              src={Express}
+              src='/images/express 1.png'
               className='skills-right__circle-img'
+              width={110}
+              height={110}
               alt='Express'
             />
             <span>Express</span>
@@ -102,44 +102,60 @@ export default function index({ isDarkMode }) {
         >
           <div className='skills-right__circle2-item'>
             <Image
-              src={HTML}
+              src='/images/html5 1.png'
               className='skills-right__circle2-img'
+              width={110}
+              height={110}
               alt='HTML'
             />
             <span>HTML</span>
           </div>
           <div className='skills-right__circle2-item'>
-            <Image src={CSS} className='skills-right__circle2-img' alt='CSS' />
+            <Image
+              src='/images/css3 1.png'
+              className='skills-right__circle2-img'
+              width={110}
+              height={110}
+              alt='CSS'
+            />
             <span>CSS</span>
           </div>
           <div className='skills-right__circle2-item'>
             <Image
-              src={Sass}
+              src='/images/sass 1.png'
               className='skills-right__circle2-img'
+              width={110}
+              height={110}
               alt='Sass'
             />
             <span>Sass</span>
           </div>
           <div className='skills-right__circle2-item'>
             <Image
-              src={GraphQL}
+              src='/images/apollographql 1.png'
               className='skills-right__circle2-img'
+              width={110}
+              height={110}
               alt='Apollo'
             />
             <span>Apollo</span>
           </div>
           <div className='skills-right__circle2-item'>
             <Image
-              src={MongoDB}
+              src='/images/mongodb 1.png'
               className='skills-right__circle2-img'
+              width={110}
+              height={110}
               alt='MongoDB'
             />
             <span>MongoDB</span>
           </div>
           <div className='skills-right__circle2-item'>
             <Image
-              src={Electron}
+              src='/images/electron 1.png'
               className='skills-right__circle2-img'
+              width={110}
+              height={110}
               alt='Electron'
             />
             <span>Electron</span>

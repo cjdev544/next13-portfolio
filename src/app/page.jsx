@@ -17,7 +17,7 @@ export default function Home() {
     <div
       style={{ background: isDarkMode && '#000', color: isDarkMode && '#fff' }}
     >
-      <header className={!isDarkMode ? 'header' : ''}>
+      <header className={!isDarkMode ? 'header' : {}}>
         <NavBar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
         <About isDarkMode={isDarkMode} />
       </header>
