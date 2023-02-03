@@ -1,0 +1,153 @@
+@import '../../scss/vars.scss';
+
+.services {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+
+  &.container {
+    margin-top: 9rem;
+  }
+
+  &-left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    & > :nth-child(1) {
+      color: $black;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    & > :nth-child(2) {
+      color: $orange;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    & > :nth-child(3) {
+      color: $gray;
+      font-size: 14px;
+      margin-top: 1rem;
+    }
+
+    &__button {
+      margin-top: 1rem;
+      text-decoration: none;
+      width: 10rem;
+    }
+  }
+
+  &-right {
+    position: relative;
+
+    & > * {
+      position: absolute;
+    }
+  }
+
+  &-card {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 20px;
+    border: 2px solid #eee;
+    box-shadow: $boxShadow;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 26px 1.5rem 26px;
+    text-align: center;
+    width: 12rem;
+
+    &__img {
+      margin: 0.5rem;
+    }
+
+    & > :nth-child(2) {
+      color: $black;
+      font-size: 20px;
+    }
+
+    & > :nth-child(3) {
+      color: $gray;
+      font-size: 16px;
+    }
+  }
+
+  &-blur2 {
+    left: 14rem !important;
+    top: 8rem !important;
+  }
+
+  &-blur1 {
+    left: -18rem !important;
+    top: 13rem !important;
+  }
+}
+
+.right-media {
+  display: none;
+}
+
+@media screen and (max-width: $tablet) {
+  .services {
+    flex-direction: column;
+    gap: 2rem;
+    height: 66rem;
+    margin: 0 auto;
+    padding: 0;
+
+    &-card {
+      display: none;
+    }
+  }
+
+  .right-media {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+
+  .right-card {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 20px;
+    border: 2px solid #eee;
+    box-shadow: $boxShadow;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    padding: 0 26px 1.5rem 26px;
+    text-align: center;
+    width: 70%;
+
+    &__img {
+      margin: 0.5rem;
+    }
+
+    & > :nth-child(2) {
+      color: $black;
+      font-size: 20px;
+    }
+
+    & > :nth-child(3) {
+      color: $gray;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .services {
+    &.container {
+      margin-top: 0;
+    }
+  }
+  .right-card {
+    width: 80%;
+  }
+}
