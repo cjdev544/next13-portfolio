@@ -1,0 +1,76 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gumela';
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  color: $black;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1600px;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.button {
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  border-radius: 34px;
+  border: 1px solid transparent;
+  box-shadow: 0 20px 24px 3px rgba(251, 161, 40, 0.42);
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 11px 26px;
+
+  &:hover {
+    background: #fff;
+    border: 1px solid $orange;
+    color: $orange;
+  }
+}
+
+.blur {
+  background: #eff0ff;
+  border-radius: 50%;
+  filter: blur(72px);
+  height: 14rem;
+  left: 56%;
+  position: absolute;
+  top: -18%;
+  width: 22rem;
+  z-index: -9;
+
+  
+}
+
+@media screen and (max-width: $tablet) {
+ .blur {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .container {
+    width: 98%;
+  }
+}
