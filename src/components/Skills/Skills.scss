@@ -2,7 +2,7 @@
 
 .skills {
   display: flex;
-  margin: 0 3rem;
+  margin: 0 auto;
 
   &.container {
     margin-top: 30rem;
@@ -216,7 +216,7 @@
 @media screen and (max-width: $large) {
   .skills {
     display: block;
-    margin: 0;
+    margin: 0 auto;
 
     &.container {
       margin-top: 15rem;
@@ -249,7 +249,7 @@
   .skills.container {
     margin-top: 0;
   }
-  
+
   .skills-right {
     align-items: center;
     flex-direction: column;
