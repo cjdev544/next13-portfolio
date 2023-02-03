@@ -1,0 +1,263 @@
+@import '../../scss/vars.scss';
+
+.skills {
+  display: flex;
+  margin: 0 3rem;
+
+  &.container {
+    margin-top: 30rem;
+  }
+
+  &-left {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    & > :nth-child(1) {
+      color: $black;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    & > :nth-child(2) {
+      color: $orange;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    & > :nth-child(3) {
+      color: $gray;
+      font-size: 14px;
+      margin-top: 1rem;
+    }
+  }
+
+  &-blur2 {
+    left: 14rem !important;
+    top: 8rem !important;
+  }
+
+  &-blur1 {
+    top: 13rem !important;
+    left: -18rem !important;
+  }
+
+  &-right {
+    position: relative;
+
+    &__circle {
+      background: #fff;
+      border-radius: 100%;
+      box-shadow: $smboxShadow;
+      color: $gray;
+      height: 18rem;
+      left: 20rem;
+      position: relative;
+      top: 5rem;
+      width: 18rem;
+
+      & > * {
+        position: absolute;
+      }
+
+      & > :nth-child(1) {
+        left: 6rem;
+        top: 5rem;
+      }
+
+      & > :nth-child(2) {
+        left: -3rem;
+        top: 4rem;
+      }
+
+      & > :nth-child(3) {
+        left: 6rem;
+        top: -4rem;
+      }
+
+      & > :nth-child(4) {
+        left: 15rem;
+        top: 4rem;
+      }
+
+      & > :nth-child(5) {
+        left: 1rem;
+        top: 13rem;
+      }
+
+      & > :nth-child(6) {
+        left: 11rem;
+        top: 13rem;
+      }
+
+      &-item {
+        align-items: center;
+        background: #fff;
+        border-radius: 100%;
+        border: 5px solid #ebebeb;
+        box-shadow: $smboxShadow;
+        display: flex;
+        flex-direction: column;
+        height: 7rem;
+        width: 7rem;
+
+        & span {
+          font-size: 12px;
+        }
+      }
+
+      &-img {
+        margin-top: 1rem;
+        width: 3.8rem;
+      }
+    }
+
+    &__circle2 {
+      background: #fff;
+      border-radius: 100%;
+      box-shadow: $smboxShadow;
+      color: $gray;
+      height: 18rem;
+      left: -10rem;
+      position: relative;
+      top: -2rem;
+      width: 18rem;
+
+      & > * {
+        position: absolute;
+      }
+
+      & > :nth-child(1) {
+        left: 6rem;
+        top: 5rem;
+      }
+
+      & > :nth-child(2) {
+        left: -3rem;
+        top: 4rem;
+      }
+
+      & > :nth-child(3) {
+        left: 6rem;
+        top: -4rem;
+      }
+
+      & > :nth-child(4) {
+        left: 15rem;
+        top: 4rem;
+      }
+
+      & > :nth-child(5) {
+        left: 1rem;
+        top: 13rem;
+      }
+
+      & > :nth-child(6) {
+        left: 11rem;
+        top: 13rem;
+      }
+
+      &-item {
+        align-items: center;
+        background: #fff;
+        border-radius: 100%;
+        border: 5px solid #ebebeb;
+        box-shadow: $smboxShadow;
+        display: flex;
+        flex-direction: column;
+        height: 7rem;
+        width: 7rem;
+
+        & span {
+          font-size: 12px;
+        }
+      }
+
+      &-img {
+        margin-top: 1rem;
+        width: 3.8rem;
+      }
+    }
+  }
+
+  &-backgrouncircle {
+    border-radius: 100%;
+    height: 13rem;
+    position: absolute;
+    width: 13rem;
+    z-index: -1;
+
+    &.blue {
+      background-color: #1a89e1;
+      left: 30rem;
+      top: 2rem;
+    }
+
+    &.yellow {
+      background-color: #f5c32c;
+      left: 30rem;
+      top: 11rem;
+    }
+
+    &.blue2 {
+      background-color: #1a89e1;
+      left: -14rem;
+      top: 23rem;
+    }
+
+    &.yellow2 {
+      background-color: #f5c32c;
+      left: -14rem;
+      top: 12rem;
+    }
+  }
+}
+
+@media screen and (max-width: $large) {
+  .skills {
+    display: block;
+    margin: 0;
+
+    &.container {
+      margin-top: 15rem;
+    }
+
+    &-right {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5rem;
+
+      &__circle,
+      &__circle2 {
+        position: initial;
+        transform: scale(0.8) !important;
+      }
+    }
+
+    &-backgrouncircle {
+      &.blue2,
+      &.yellow2,
+      &.blue,
+      &.yellow {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .skills.container {
+    margin-top: 0;
+  }
+  
+  .skills-right {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+
+    &__circle,
+    &__circle2 {
+      transform: scale(0.6) !important;
+    }
+  }
+}
