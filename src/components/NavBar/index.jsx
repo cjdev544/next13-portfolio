@@ -16,34 +16,32 @@ export default function NavBar() {
   }
 
   return (
-    <header>
-      <nav className='navbar container'>
-        <div className='navbar-left'>
-          <div className='navbar-left__name'>{'<CjDev544 />'}</div>
+    <nav className='navbar container'>
+      <div className='navbar-left'>
+        <div className='navbar-left__name'>{'<CjDev544 />'}</div>
+      </div>
+      <div className='navbar-right'>
+        <div className={`navbar-right__list ${isOpen ? 'isOpen' : ''}`}>
+          <ul>
+            {navItems.map((item) => (
+              <NavItem key={item} item={item} setOpen={setOpen} />
+            ))}
+          </ul>
         </div>
-        <div className='navbar-right'>
-          <div className={`navbar-right__list ${isOpen ? 'isOpen' : ''}`}>
-            <ul>
-              {navItems.map((item) => (
-                <NavItem key={item} item={item} setOpen={setOpen} />
-              ))}
-            </ul>
-          </div>
-          <a
-            href='#contacto'
-            className='button navbar-button'
-            onClick={closeMenu}
-          >
-            Contactame
-          </a>
-          <Hamburger
-            direction='right'
-            toggled={isOpen}
-            toggle={setOpen}
-            className='navbar-hamburger'
-          />
-        </div>
-      </nav>
-    </header>
+        <a
+          href='#contacto'
+          className='button navbar-button'
+          onClick={closeMenu}
+        >
+          Contactame
+        </a>
+        <Hamburger
+          direction='right'
+          toggled={isOpen}
+          toggle={setOpen}
+          className='navbar-hamburger'
+        />
+      </div>
+    </nav>
   )
 }

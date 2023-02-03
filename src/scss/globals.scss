@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  background: linear-gradient(180deg, #ffc973 0%, rgba(255, 255, 255, 0) 6rem);
   background-repeat: no-repeat;
   font-family: 'Gumela';
   font-size: 20px;
@@ -19,6 +18,10 @@ body {
   overflow-x: hidden;
   position: relative;
   height: 100vh;
+}
+
+header {
+  background: linear-gradient(180deg, #ffc973 0%, rgba(255, 255, 255, 0) 6rem);
 }
 
 h1,

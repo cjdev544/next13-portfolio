@@ -1,0 +1,38 @@
+@import '../../scss/vars.scss';
+
+.footer {
+  align-items: center;
+  display: flex;
+  position: relative;
+
+  &-background {
+    width: 100%;
+  }
+
+  &-content {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 4rem;
+    position: absolute;
+    width: 100%;
+
+    span {
+      font-size: 2rem;
+    }
+  }
+
+  &-icons {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .footer-content {
+    transform: scale(0.7);
+  }
+}
