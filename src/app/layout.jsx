@@ -1,3 +1,4 @@
+import NavBar from '@/components/NavBar'
 import '../scss/index.scss'
 
 export default function RootLayout({ children }) {
@@ -9,9 +10,7 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body>
-        <header>
-          <p>Mi header</p>
-        </header>
+        <NavBar />
         {children}
       </body>
     </html>

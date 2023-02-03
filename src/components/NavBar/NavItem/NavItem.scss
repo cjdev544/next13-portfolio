@@ -1,0 +1,9 @@
+@import '../../../scss/vars.scss';
+
+.navItem a {
+  text-decoration: none;
+
+  @media screen and (max-width: $laptop) {
+    font-size: 2rem;
+  }
+}

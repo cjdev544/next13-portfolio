@@ -1,0 +1,126 @@
+@import '../../scss/vars.scss';
+
+.navbar {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+
+  &-left {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    gap: 2rem;
+
+    &__name {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+
+  &-right {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    font-weight: 400;
+    justify-content: center;
+
+    @media screen and (max-width: $laptop) {
+      justify-content: space-between;
+    }
+
+    &__list {
+      flex: 10;
+
+      & > ul {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+        margin-right: 4rem;
+        list-style: none;
+
+        & li a {
+          color: #000;
+          text-decoration: none;
+        }
+      }
+
+      @media screen and (max-width: $laptop) {
+        background: $orange;
+        left: 100vw;
+        opacity: 0.9;
+        overflow: hidden;
+        position: absolute;
+        transition: all 0.4s ease-in-out;
+        top: 5rem;
+        width: 100vw;
+        z-index: 1000;
+
+        /* background: $orange;
+        left: 100vw;
+        opacity: 0.9;
+        overflow: hidden;
+        position: fixed;
+        transition: all 0.4s ease-in-out;
+        top: 5rem;
+        width: 100vw;
+        z-index: 1000; */
+
+        &.isOpen {
+          left: 0;
+
+          html,
+          .App {
+            overflow: hidden;
+          }
+        }
+
+        & > ul {
+          align-items: center;
+          flex-direction: column;
+          height: 100vh;
+          margin-top: 2rem;
+          padding-bottom: 22rem;
+          width: 100vw;
+
+          li {
+            color: #000;
+            font-size: 2rem;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    &__list-item a {
+      cursor: pointer;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.hamburger-react {
+  display: none;
+}
+
+@media screen and (max-width: $laptop) {
+  .hamburger-react {
+    display: initial;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .navbar {
+    &-button {
+      display: none;
+    }
+
+    &-right {
+      flex: 0;
+    }
+  }
+}
