@@ -17,7 +17,7 @@ export default function Services({ isDarkMode }) {
   return (
     <section className='services container' id='servicios'>
       <div className='services-left'>
-        <span style={{ color: isDarkMode && '#fff' }}>Conoce mis</span>
+        <span style={isDarkMode ? { color: '#fff' } : {}}>Conoce mis</span>
         <h2>Servicios</h2>
         <span>
           En esta sección podras ver los servicios que ofrezco como
@@ -46,7 +46,7 @@ export default function Services({ isDarkMode }) {
               className='services-card__img'
               alt='emoji diseño UI UX'
             />
-            <h3 style={{ color: isDarkMode && '#fff' }}>UI / UX</h3>
+            <h3 style={isDarkMode ? { color: '#fff' } : {}}>UI / UX</h3>
             <p>
               Diseños atracivos enfocados en la usabilidad y experencia de
               usuario
@@ -67,7 +67,7 @@ export default function Services({ isDarkMode }) {
               height={80}
               alt='emoji Programación'
             />
-            <h3 style={{ color: isDarkMode && '#fff' }}>Programación</h3>
+            <h3 style={isDarkMode ? { color: '#fff' } : {}}>Programación</h3>
             <p>
               Desarrollo de sitios web, Apps web y Apps de escritorio con
               tecnologías web
@@ -88,7 +88,9 @@ export default function Services({ isDarkMode }) {
               height={80}
               alt='diseño renponsivo'
             />
-            <h3 style={{ color: isDarkMode && '#fff' }}>Diseño responsivo</h3>
+            <h3 style={isDarkMode ? { color: '#fff' } : {}}>
+              Diseño responsivo
+            </h3>
             <p>
               Diseño adaptable a dispositivos, mobil, tablet y de escritorio.
             </p>
@@ -109,7 +111,7 @@ export default function Services({ isDarkMode }) {
             height={80}
             alt='emoji diseño UI UX'
           />
-          <h3 style={{ color: isDarkMode && '#fff' }}>UI / UX</h3>
+          <h3 style={isDarkMode ? { color: '#fff' } : {}}>UI / UX</h3>
           <p>
             Diseños atracivos enfocados en la usabilidad y experencia de usuario
           </p>
@@ -122,7 +124,7 @@ export default function Services({ isDarkMode }) {
             height={80}
             alt='Programación'
           />
-          <h3 style={{ color: isDarkMode && '#fff' }}>Programación</h3>
+          <h3 style={isDarkMode ? { color: '#fff' } : {}}>Programación</h3>
           <p>
             Desarrollo de sitios web, Apps web y Apps de escritorio con
             tecnologías web
@@ -136,7 +138,7 @@ export default function Services({ isDarkMode }) {
             height={80}
             alt='diseño renponsivo'
           />
-          <h3 style={{ color: isDarkMode && '#fff' }}>Diseño responsivo</h3>
+          <h3 style={isDarkMode ? { color: '#fff' } : {}}>Diseño responsivo</h3>
           <p>Diseño adaptable a dispositivos, mobil, tablet y de escritorio.</p>
         </div>
         <div

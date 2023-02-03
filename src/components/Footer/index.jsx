@@ -1,3 +1,4 @@
+'use client'
 /* eslint-disable react/jsx-curly-brace-presence */
 
 import Image from 'next/image'

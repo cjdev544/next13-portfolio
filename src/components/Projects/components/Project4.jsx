@@ -1,3 +1,6 @@
+'use client'
+/* eslint-disable camelcase */
+
 import { useRef, useState } from 'react'
 import Image from 'next/image'
 import XButton from '@iconscout/react-unicons/icons/uil-x'
@@ -80,10 +83,9 @@ export default function Project4() {
           rel='noopener noreferrer nofollow'
           target='_blank'
         >
-          cjdev544-instaclone.vercel.app
+          instagram-clone
         </a>
       </p>
-      <p className='link'></p>
       <p className='link'>
         Repositorio Cliente:
         <a
@@ -94,7 +96,6 @@ export default function Project4() {
           github.com/cjdev544/instaclone-client
         </a>
       </p>
-      <p className='link'></p>
       <p className='link'>
         Repositorio Servidor:
         <a
@@ -135,6 +136,7 @@ export default function Project4() {
           <div ref={boxRef}>
             <XButton
               color='white'
+              // eslint-disable-next-line react/jsx-curly-brace-presence
               size={'3rem'}
               className='picture-close'
               onClick={() => setShowPicture(null)}

@@ -103,7 +103,9 @@ export default function Contact({ isDarkMode }) {
   return (
     <section className='contact container' id='contacto'>
       <div className='contact-left'>
-        <span style={{ color: isDarkMode && '#fff' }}>Trabajemos juntos</span>
+        <span style={isDarkMode ? { color: '#fff' } : {}}>
+          Trabajemos juntos
+        </span>
         <h2>Contacto</h2>
         <div
           className='blur contact-blur'

@@ -1,3 +1,6 @@
+'use client'
+/* eslint-disable camelcase */
+
 import { useRef, useState } from 'react'
 import Image from 'next/image'
 import XButton from '@iconscout/react-unicons/icons/uil-x'
@@ -65,10 +68,10 @@ export default function Project3() {
           rel='noopener noreferrer nofollow'
           target='_blank'
         >
-          centralfoodmalaga.com
+          facebook-clone
         </a>
       </p>
-      <p className='link'></p>
+
       <p className='link'>
         Repositorio:
         <a
@@ -109,6 +112,7 @@ export default function Project3() {
           <div ref={boxRef}>
             <XButton
               color='white'
+              // eslint-disable-next-line react/jsx-curly-brace-presence
               size={'3rem'}
               className='picture-close'
               onClick={() => setShowPicture(null)}

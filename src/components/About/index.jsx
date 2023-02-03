@@ -21,7 +21,9 @@ export default function About({ isDarkMode }) {
     <section className='about container'>
       <div className='about-left'>
         <div className='about-left__info'>
-          <span style={{ color: isDarkMode && '#fff' }}>¡Hola!, yo soy</span>
+          <span style={isDarkMode ? { color: '#fff' } : {}}>
+            ¡Hola!, yo soy
+          </span>
           <h1>Jefferson Campos</h1>
           <span>
             Un gusto poder saludarte, vivo en Caracas Venezuela, soy electrónico

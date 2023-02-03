@@ -1,3 +1,6 @@
+'use client'
+/* eslint-disable camelcase */
+
 import { useRef, useState } from 'react'
 import Image from 'next/image'
 import XButton from '@iconscout/react-unicons/icons/uil-x'
@@ -99,6 +102,7 @@ export default function Project2() {
           <div ref={boxRef}>
             <XButton
               color='white'
+              // eslint-disable-next-line react/jsx-curly-brace-presence
               size={'3rem'}
               className='picture-close'
               onClick={() => setShowPicture(null)}
