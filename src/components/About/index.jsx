@@ -33,7 +33,7 @@ export default function About({ isDarkMode }) {
           </span>
         </div>
         <a
-          href='/public/resume.pdf'
+          href='/resume.pdf'
           rel='noopener noreferrer nofollow'
           target='_blank'
           download
