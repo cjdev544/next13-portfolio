@@ -111,8 +111,8 @@ export default function Project2() {
               <Image
                 src='/images/project2-1.jpg'
                 className='picture-item'
-                width={900}
-                height={250}
+                width={1280}
+                height={720}
                 alt='administrador central food imagen 1'
               />
             )}
@@ -120,8 +120,8 @@ export default function Project2() {
               <Image
                 src='/images/project2-2.jpg'
                 className='picture-item'
-                width={900}
-                height={250}
+                width={1280}
+                height={720}
                 alt='administrador central food imagen 2'
               />
             )}
@@ -129,8 +129,8 @@ export default function Project2() {
               <Image
                 src='/images/project2-3.jpg'
                 className='picture-item'
-                width={900}
-                height={250}
+                width={1280}
+                height={720}
                 alt='administrador central food imagen 3'
               />
             )}
@@ -138,8 +138,8 @@ export default function Project2() {
               <Image
                 src='/images/project2-4.jpg'
                 className='picture-item'
-                width={900}
-                height={250}
+                width={1280}
+                height={720}
                 alt='administrador central food imagen 4'
               />
             )}
