@@ -23,7 +23,7 @@ export default function About({ isDarkMode }) {
             Un gusto poder saludarte, vivo en Caracas Venezuela, soy electrónico
             de profesión y gran entusiasta de la tecnología. Programador,
             guitarrista afisionado y amante de los animales. Contactame y
-            llevemos tus ideas a codigo.
+            llevemos tus ideas a código.
           </span>
         </div>
         <a

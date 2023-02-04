@@ -23,7 +23,7 @@ export default function Projects({ isDarkMode }) {
     <section id='proyectos' className='projects container'>
       <span style={isDarkMode ? { color: '#fff' } : {}}>Algunos de mis</span>
       <h2>Proyectos</h2>
-      <p>Puedes dar click sobre un proyecto y verlo mas en profundidad</p>
+      <p>Puedes dar click sobre un proyecto y verlo más en profundidad</p>
       <div className='projects-items'>
         <button
           className='projects-items__card'

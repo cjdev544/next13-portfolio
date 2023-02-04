@@ -12,7 +12,7 @@ export default function index({ isDarkMode }) {
         <span style={isDarkMode ? { color: '#fff' } : {}}>
           Trabajo con estas
         </span>
-        <h2>Tecnologías</h2>
+        <h2>Tecnologias</h2>
         <span>
           En esta sección podras ver las tegnologías con las que he trabajado.{' '}
           <br /> Poco a poco conociendolas mejor y sumando nuevas, con la

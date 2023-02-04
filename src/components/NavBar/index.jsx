@@ -10,7 +10,7 @@ import './Navbar.scss'
 export default function NavBar({ isDarkMode, setIsDarkMode }) {
   const [isOpen, setOpen] = useState(false)
 
-  const navItems = ['Servicios', 'Tecnologías', 'Proyectos', 'Contacto']
+  const navItems = ['Servicios', 'Tecnologias', 'Proyectos', 'Contacto']
 
   const closeMenu = () => {
     setOpen(false)

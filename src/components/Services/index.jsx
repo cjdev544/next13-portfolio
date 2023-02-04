@@ -45,7 +45,7 @@ export default function Services({ isDarkMode }) {
             />
             <h3 style={isDarkMode ? { color: '#fff' } : {}}>UI / UX</h3>
             <p>
-              Diseños atracivos enfocados en la usabilidad y experencia de
+              Diseños atractivos enfocados en la usabilidad y experencia de
               usuario
             </p>
           </div>
@@ -110,7 +110,8 @@ export default function Services({ isDarkMode }) {
           />
           <h3 style={isDarkMode ? { color: '#fff' } : {}}>UI / UX</h3>
           <p>
-            Diseños atracivos enfocados en la usabilidad y experencia de usuario
+            Diseños atractivos enfocados en la usabilidad y experencia de
+            usuario
           </p>
         </div>
         <div className='right-card'>
@@ -124,7 +125,7 @@ export default function Services({ isDarkMode }) {
           <h3 style={isDarkMode ? { color: '#fff' } : {}}>Programación</h3>
           <p>
             Desarrollo de sitios web, Apps web y Apps de escritorio con
-            tecnologías web
+            tecnologias web
           </p>
         </div>
         <div className='right-card'>
