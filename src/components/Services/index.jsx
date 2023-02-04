@@ -17,7 +17,7 @@ export default function Services({ isDarkMode }) {
         <span style={isDarkMode ? { color: '#fff' } : {}}>Conoce mis</span>
         <h2>Servicios</h2>
         <span>
-          En esta sección podras ver los servicios que ofrezco como
+          En esta sección podrás ver los servicios que ofrezco como
           desarrollador. <br /> Si buscas algo especifico, no dudes en
           contactarme.
         </span>

@@ -14,7 +14,7 @@ export default function index({ isDarkMode }) {
         </span>
         <h2>Tecnologias</h2>
         <span>
-          En esta sección podras ver las tegnologías con las que he trabajado.{' '}
+          En esta sección podrás ver las tegnologías con las que he trabajado.{' '}
           <br /> Poco a poco conociendolas mejor y sumando nuevas, con la
           finalidad <br /> de expandir las posibilidades y divertirme en el
           proceso.
