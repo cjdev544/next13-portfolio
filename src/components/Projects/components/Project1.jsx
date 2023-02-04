@@ -20,7 +20,7 @@ export default function Project1() {
 
   return (
     <div className='project'>
-      <h2>CentralFoodMalaga</h2>
+      <h2>CentralFood Málaga</h2>
       <p>
         Aplicación web de restaurante de comida. La app tiene autenticación para
         poder registrarse e iniciar sesión con la finalidad que los clientes
