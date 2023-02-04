@@ -66,10 +66,10 @@ export default function Contact({ isDarkMode }) {
 
     emailjs
       .sendForm(
-        'service_sk9f2zf',
-        'template_5497r0i',
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
         form.current,
-        'Bc-ChCA-Knl8oUaXt'
+        process.env.NEXT_PUBLIC_PUBLIC_KEY
       )
       .then(
         (result) => {
