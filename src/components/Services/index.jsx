@@ -89,7 +89,7 @@ export default function Services({ isDarkMode }) {
               Diseño responsivo
             </h3>
             <p>
-              Diseño adaptable a dispositivos, móvil, tablet y de escritorio.
+              Diseño adaptable a dispositivos móviles, tablets y de escritorio.
             </p>
           </div>
         </motion.div>
