@@ -136,7 +136,9 @@ export default function Services({ isDarkMode }) {
             alt='diseño renponsivo'
           />
           <h3 style={isDarkMode ? { color: '#fff' } : {}}>Diseño responsivo</h3>
-          <p>Diseño adaptable a dispositivos, mobil, tablet y de escritorio.</p>
+          <p>
+            Diseño adaptable a dispositivos móviles, tablets y de escritorio.
+          </p>
         </div>
         <div
           className='blur services-blur2'
