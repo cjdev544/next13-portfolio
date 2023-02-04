@@ -36,6 +36,7 @@ export default function Project4() {
             src='/images/project4-1.jpg'
             className='projects-img'
             width={450}
+            height={500}
             alt='clone de instagram 1'
           />
         </button>
@@ -47,6 +48,7 @@ export default function Project4() {
             src='/images/project4-2.jpg'
             className='projects-img'
             width={450}
+            height={500}
             alt='clone de instagram 2'
           />
         </button>
@@ -111,6 +113,7 @@ export default function Project4() {
             src='/images/project4-3.jpg'
             className='projects-img'
             width={450}
+            height={500}
             alt='clone de instagram 3'
           />
         </button>
@@ -122,6 +125,7 @@ export default function Project4() {
             src='/images/project4-4.jpg'
             className='projects-img'
             width={450}
+            height={500}
             alt='clone de instagram 4'
           />
         </button>
@@ -141,7 +145,8 @@ export default function Project4() {
               <Image
                 src='/images/project4-1.jpg'
                 className='picture-item'
-                width={850}
+                width={900}
+                height={250}
                 alt='clone de instagram imagen 1'
               />
             )}
@@ -149,7 +154,8 @@ export default function Project4() {
               <Image
                 src='/images/project4-2.jpg'
                 className='picture-item'
-                width={850}
+                width={900}
+                height={250}
                 alt='clone de instagram imagen 2'
               />
             )}
@@ -157,7 +163,8 @@ export default function Project4() {
               <Image
                 src='/images/project4-3.jpg'
                 className='picture-item'
-                width={850}
+                width={900}
+                height={250}
                 alt='clone de instagram imagen 3'
               />
             )}
@@ -165,7 +172,8 @@ export default function Project4() {
               <Image
                 src='/images/project4-4.jpg'
                 className='picture-item'
-                width={850}
+                width={900}
+                height={250}
                 alt='clone de instagram imagen 4'
               />
             )}

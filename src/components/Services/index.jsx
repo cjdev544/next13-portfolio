@@ -21,7 +21,7 @@ export default function Services({ isDarkMode }) {
           desarrollador. <br /> Si buscas algo especifico, no dudes en
           contactarme.
         </span>
-        <a href='#' className='button services-left__button'>
+        <a href='#contacto' className='button services-left__button'>
           Contactame
         </a>
         <div

@@ -36,6 +36,7 @@ export default function Project3() {
             src='/images/project3-1.jpg'
             className='projects-img'
             width={450}
+            height={250}
             alt='clone de facebook 1'
           />
         </button>
@@ -47,6 +48,7 @@ export default function Project3() {
             src='/images/project3-2.jpg'
             className='projects-img'
             width={450}
+            height={250}
             alt='clone de facebook 2'
           />
         </button>
@@ -87,6 +89,7 @@ export default function Project3() {
             src='/images/project3-3.jpg'
             className='projects-img'
             width={450}
+            height={250}
             alt='clone de facebook 3'
           />
         </button>
@@ -98,6 +101,7 @@ export default function Project3() {
             src='/images/project3-4.jpg'
             className='projects-img'
             width={450}
+            height={250}
             alt='clone de facebook 4'
           />
         </button>
@@ -117,7 +121,8 @@ export default function Project3() {
               <Image
                 src='/images/project3-1.jpg'
                 className='picture-item'
-                width={850}
+                width={900}
+                height={250}
                 alt='clone de facebook imagen 1'
               />
             )}
@@ -125,7 +130,8 @@ export default function Project3() {
               <Image
                 src='/images/project3-2.jpg'
                 className='picture-item'
-                width={850}
+                width={900}
+                height={250}
                 alt='clone de facebook imagen 2'
               />
             )}
@@ -133,7 +139,8 @@ export default function Project3() {
               <Image
                 src='/images/project3-3.jpg'
                 className='picture-item'
-                width={850}
+                width={900}
+                height={250}
                 alt='clone de facebook imagen 3'
               />
             )}
@@ -141,7 +148,8 @@ export default function Project3() {
               <Image
                 src='/images/project3-4.jpg'
                 className='picture-item'
-                width={850}
+                width={900}
+                height={250}
                 alt='clone de facebook imagen 4'
               />
             )}

@@ -98,6 +98,10 @@
     margin: 0 auto;
     padding: 0;
 
+    &.container {
+      margin-top: 0;
+    }
+
     &-card {
       display: none;
     }
@@ -144,7 +148,7 @@
 @media screen and (max-width: $mobile) {
   .services {
     &.container {
-      margin-top: 0;
+      margin-top: 8rem;
     }
   }
   .right-card {

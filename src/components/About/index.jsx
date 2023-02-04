@@ -64,8 +64,8 @@ export default function About({ isDarkMode }) {
       <div className='about-right'>
         <Image
           src='/images/boy.png'
-          width={285}
-          height={406}
+          width={476}
+          height={410}
           alt='Foto CjDev544'
         />
         <motion.div
@@ -75,8 +75,8 @@ export default function About({ isDarkMode }) {
         >
           <Image
             src='/images/js.png'
-            width={180}
-            height={180}
+            width={150}
+            height={150}
             alt='JavaScript'
           />
         </motion.div>
