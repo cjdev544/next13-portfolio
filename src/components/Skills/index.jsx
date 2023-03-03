@@ -64,13 +64,13 @@ export default function index({ isDarkMode }) {
           </div>
           <div className='skills-right__circle-item'>
             <Image
-              src='/images/gatsby 1.png'
+              src='/images/ts.png'
               className='skills-right__circle-img'
               width={110}
               height={110}
               alt='Gatsby'
             />
-            <span>Gatsby</span>
+            <span>TypeScript</span>
           </div>
           <div className='skills-right__circle-item'>
             <Image
