@@ -6,11 +6,21 @@
 
   ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+
+    & li {
+      color: '#000';
+    }
   }
 
   & h2,
   & p {
     text-align: center;
+  }
+
+  & h3 {
+    color: '#000';
   }
 
   & p {
