@@ -20,7 +20,7 @@ export default function About({ isDarkMode }) {
           </span>
           <h1>Jefferson Campos</h1>
           <span>
-            Un gusto poder saludarte, vivo en Caracas Venezuela, soy electrónico
+            Un gusto poder saludarte, vivo en Málaga España, soy electrónico
             de profesión y gran entusiasta de la tecnología. Programador,
             guitarrista afisionado y amante de los animales. Contactame y
             llevemos tus ideas a código.
